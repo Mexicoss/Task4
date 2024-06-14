@@ -64,7 +64,7 @@
 <input type="text" id="patronymic" name="patronymic"><br><br>
 
 <label for="patronymic">Фото первой страницы паспорта клиента:</label><br>
-<input type="file" name="photo" multiple accept="image/*,image/jpeg">
+<input type="file" name="photo" multiple accept="image/*,image/jpeg"><br>
 
 <label for="state">Откуда вы узнали о нас:</label><br>
 <select id="state" name="state" required>
