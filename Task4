@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Форма регистрации</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Регистрация в интернет-магазине</h1>
+<form action="submit.php" method="post">
+<label for="surname">Фамилия:</label><br>
+<input type="text" id="surname" name="surname" required><br><br>
+
+<label for="name">Имя:</label><br>
+<input type="text" id="name" name="name" required><br><br>
+
+<label for="patronymic">Отчество:</label><br>
+<input type="text" id="patronymic" name="patronymic"><br><br>
+
+<label for="gender">Пол:</label><br>
+<select id="gender" name="gender" required>
+<option value="male">Мужской</option>
+<option value="female">Женский</option>
+</select><br><br>
+
+<label for="eye-color">Цвет глаз:</label><br>
+<input type="color" id="eye-color" name="eye-color"><br><br>
+
+<label for="age">Дата Рождения: </label>
+<input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2025-12-31" />   
+
+<label for="age">Возраст: </label>
+<input type="number" step="1" min="18" max="100" value="10" id="age" name="age"/>
+
+<label for="state">Место рождения:</label><br>
+<select id="state" name="state" required>
+<option value="Saratov">Саратов</option>
+<option value="Moscow">Москва</option>
+<option value="Penza">Пенза</option>
+<option value="Vologda">Вологда</option>
+<option value="Volgograd">Волгоград</option>
+<option value="Nizhny Novgorod">Нижний Новгород</option>
+</select><br><br>
+
+<label for="patronymic">Индекс:</label><br>
+<input type="text" id="patronymic" name="patronymic"><br><br>
+
+<label for="patronymic">Домашний адрес:</label><br>
+<input type="text" id="patronymic" name="patronymic"><br><br>
+
+<label for="age">Дата регистрации: </label>
+<input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2025-12-31" />
+
+<label for="phone">
+  Номер телефона:<br />
+  <small>Format: +7800 555 35 35</small>
+</label>
+
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required />
+
+<label for="patronymic">Email:</label><br>
+<input type="text" id="patronymic" name="patronymic"><br><br>
+
+<label for="patronymic">Фото первой страницы паспорта клиента:</label><br>
+<input type="file" name="photo" multiple accept="image/*,image/jpeg">
+
+<label for="state">Откуда вы узнали о нас:</label><br>
+<select id="state" name="state" required>
+<option value="Saratov">Баннер в интернете</option>
+<option value="Moscow">Ссылка в соцсети ВКонтакте, Одноклассники</option>
+<option value="Penza">Е-mail рассылка</option>
+<option value="Vologda">Наружная реклама</option>
+<option value="Volgograd">Флаер</option>
+</select><br><br>
+
+<input type="checkbox" id="politics" onclick="check();" value="" autocomplete="off"/>
+Нажимая на кнопку "Отправить", я даю <a href="ссылка на страницу согласия">согласие на обработку персональных данных.</a>
+
+<input type="submit" value="Отправить">
+<input type="reset" value="Очистить">
+</form>
+</body>
+</html>
+</code></pre>
